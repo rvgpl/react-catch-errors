@@ -1,7 +1,7 @@
 {
-  "name": "@rvgpl/typescript-library-starter",
-  "version": "1.0.0",
-  "description": "Just another typescript library starter",
+  "name": "@rvgpl/react-catch-errors",
+  "version": "0.0.0",
+  "description": "A react error boundary component to catch all kinds of errors",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/rvgpl/typescript-library-starter.git"
+    "url": "https://github.com/rvgpl/react-catch-errors.git"
   },
   "scripts": {
     "test": "jest --config jestconfig.json --watchAll",
@@ -18,14 +18,23 @@
     "build": "npm run clean && tsc",
     "publish": "npm run build && npm publish --access public"
   },
-  "keywords": [],
+  "keywords": [
+    "error boundary",
+    "react",
+    "handle errors",
+    "errors"
+  ],
   "author": "Ravigopal Kesari",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^25.2.1",
+    "@types/react": "^16.9.49",
     "jest": "^25.2.7",
     "prettier": "^1.19.1",
     "ts-jest": "^25.3.1",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1"
   }
 }

@@ -1,3 +1,3 @@
-const add = (a: number, b: number): number => a + b;
+import { ErrorBoundary } from "./error-boundary";
 
-export default add;
+export default ErrorBoundary;
